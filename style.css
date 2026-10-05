@@ -1,0 +1,290 @@
+body {
+  color: rgba(255, 255, 255);
+  background-color: rgb(31, 31, 29);
+  font-family: "Times New Roman", Times, serif;
+}
+
+b {
+  color: rgb(123, 173, 70);
+}
+
+h1 {
+  font-size: 45px;
+  padding: 20px;
+  text-align: center;
+  border-bottom: solid 3px;
+}
+
+h1,
+h2 {
+  color: rgba(78, 120, 55);
+  margin: 10px;
+}
+
+p {
+  margin: 5px;
+  padding: 5px;
+}
+
+h3 {
+  color: rgb(219, 180, 113);
+}
+
+#center-h2 {
+  font-size: 32px;
+  text-align: center;
+  border-bottom: solid 3px;
+}
+
+/* #region Bobby Fischer */
+.fischer-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.fotos-fischer img {
+  margin: 5px;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  mask-image: linear-gradient(to right, transparent 0%, black 30%);
+}
+/* #endregion */
+
+/* #region Mikhail Tal */
+.tal-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.fotos-tal img {
+  margin: 5px;
+  width: 220px;
+  height: auto;
+  border-radius: 20px;
+
+  mask-image: linear-gradient(to right, transparent 0%, black 30%);
+}
+/* #endregion */
+
+/* #region Gotham Chess */
+.gotham-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.fotos-gotham {
+  margin: 10px;
+  position: relative;
+  width: 350px;
+  flex-shrink: 0;
+}
+
+.fotos-gotham img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  mask-image: linear-gradient(to right, transparent 0%, black 30%);
+  transition: opacity 5s ease;
+}
+
+.gotham-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.fotos-gotham:hover .gotham-hover {
+  opacity: 1;
+}
+/*Area link chessly*/
+#link-chessly {
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgba(209, 0, 126);
+}
+
+#link-chessly:visited,
+#link-chessly:link {
+  color: rgba(209, 0, 126);
+}
+
+#link-chessly:hover {
+  color: rgba(251, 103, 190);
+}
+/* #endregion */
+
+/* #region Magnus Carlsen */
+.magnus-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.fotos-magnus img {
+  margin: 10px;
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  mask-image: linear-gradient(to right, transparent 0%, black 30%);
+}
+
+/* #endregion */
+
+/* #region board-containers */
+.board-container {
+  display: flex;
+  gap: 25px;
+}
+
+#tabuleiro {
+  width: 350px;
+  height: 350px;
+}
+
+.board-container img {
+  margin: 10px;
+  margin-bottom: 50px;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* #endregion */
+
+/* #region Formulário */
+#formulario {
+  margin: 10px auto 30px auto;
+  padding: 10px;
+  border: solid 5px rgba(75, 72, 71);
+  border-radius: 5px;
+  background-color: rgba(45, 45, 42);
+  border-color: rgba(78, 120, 55);
+  width: 40%;
+  margin-bottom: 50px;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.formulario-containers {
+  margin-bottom: 15px;
+}
+
+label {
+  color: rgb(219, 180, 113);
+}
+
+input[type="text"],
+select,
+textarea {
+  padding: 5px;
+  width: 70%;
+  border: solid 4px rgba(75, 72, 71);
+  border-radius: 3px;
+  background-color: rgba(31, 31, 29);
+  color: white;
+}
+
+textarea {
+  resize: none;
+  color: white;
+  background-color: rgba(31, 31, 29);
+}
+
+.formulario-containers label,
+input,
+textarea,
+select {
+  display: block;
+  margin: 5px;
+}
+
+#botao-submit {
+  background-color: rgba(78, 120, 55);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 0px;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* #endregion */
+
+/* #region Tabelas */
+
+.tabela-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.tabela-container img {
+  width: 65px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+table {
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 15px;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  table-layout: fixed;
+  border: solid 2px;
+  border-collapse: collapse;
+}
+
+td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  height: 100px;
+  overflow: hidden;
+  text-align: center;
+  border: solid 2px rgba(75, 72, 71);
+  padding: 10px;
+}
+th {
+  text-align: center;
+  border: solid 2px rgba(75, 72, 71);
+  background-color: rgba(78, 120, 55);
+  padding: 10px;
+}
+
+td:nth-child(1),
+th:nth-child(1) {
+  width: 25%;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  width: 25%;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+  width: 50%;
+}
+
+/* #endregion */
+
+/* #region Footer */
+footer {
+  display: block;
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(42, 34, 21);
+  color: white;
+}
+
+#footer-link {
+  color: rgb(108, 200, 58);
+}
+/* #endregion */
